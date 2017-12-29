@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     fengzhuang("myimg",true);
+  fengzhuang("myimg2",false);
+  fengzhuang("myimg3",true);
+  fengzhuang("myimg4",true);
+  fengzhuang("myimg5",true); 
+    
+
+  function fengzhuang(id,z){
+    var myimg=document.getElementById(id);
+    var n=1;
+    var myli=myimg.getElementsByClassName('img_list')[0].children;
+    var mycircle=myimg.getElementsByClassName('img_circle')[0].children;
+    var myleft=myimg.getElementsByClassName('img_left')[0];
+    var myright=myimg.getElementsByClassName('img_right')[0];
+    
+    var mytime=setInterval(runImg,3000);
+      function runImg(){
+          if (n>=myli.length){
+              n=0;
+          }
+          if (n<0) {
+              n=myli.length-1;
+          }
+      
+        for (var i = 0; i < myli.length; i++){
+        myli[i].style.opacity=0;
+        mycircle[i].className='yuan';
+        }
+        mycircle[n].className='active';
+        myli[n].style.opacity=1;
+        // console.log(n);
+        n++;
+      }
+        
+      for (var i = 0; i < mycircle.length; i++) {
+       mycircle[i].n=i;
+       mycircle[i].onmouseover=function(){
+        clearInterval(mytime);
+        n=this.n;
+        runImg();
+       }
+      }
+      
+        
+      myimg.onmouseover=function(){
+       clearInterval(mytime);
+
+       if(z){
+          myleft.onclick=function(){
+          n-=2;
+          runImg();
+          }
+          myright.onclick=function(){
+          // console.log(n);
+          runImg();
+          }
+       }
+      }
+      myimg.onm
+
+
+      3
+      function(){
+       mytime=setInterval(runImg,3000);
+      }
+  }
+  </script>
+</body>
+</html>

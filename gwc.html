@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="stylesheet" href="gwc.css">
+	<script src="gwc.js"></script>
+</head>
+<body>
+	<header>
+		<span class="head_sp1">
+			<span>
+				购物车
+			</span>
+			
+		</span>
+		<span class="head_sp2">
+			<input type="text" class="head_ipt1"><input type="button" class="head_ipt2" value="搜索">
+		</span>
+	</header>
+	<div class="warning">
+		<div class="warning_font">
+			<span><img src="imgs/warning.png" alt="" style="vertical-align:middle;"></span>
+			 &nbsp;&nbsp;您还没有登录！登录后购物车的商品将保存到您账号中  &nbsp;
+			<input type="button" class="warning_btn" value="立即登录">
+		</div>
+	</div>
+	<section>
+		<div class="card">
+			<div style="float: left;">
+			<span class="card_1">全部商品</span>
+			<span class="card_2">2</span>
+			<span class="card_3">京东大药房</span>
+			</div>
+			<div class="card_div">
+				<span class="card_div_sp1">配送至：</span>
+				<span class="card_div_sp2">
+					北京朝阳区三环以内<b><img src="imgs/down.png" alt=""></b>
+				</span>	
+			</div>
+		</div>
+		<div class="thead">
+			<div class="thead1">
+				<input type="checkbox" id="select_all">
+				<span class="thead1_sp1">全选</span>
+			</div>
+			<div class="thead2">
+				商品
+			</div>
+			<div class="thead_kongbai"></div>
+			<div class="thead3">
+				单价
+			</div>
+			<div class="thead4">
+				数量
+			</div>
+			<div class="thead5">
+				小计
+			</div>
+			<div class="thead6">
+				操作
+			</div>
+		</div>
+		<div class="shop">
+			<div class="shop1">
+				<div class="shop_top">
+					<div class="shop_top_div">
+						<input type="checkbox" class="op">
+						<span class="shop_top_sp1">腾威国际专营店</span>
+						<span class="shop_top_sp2"></span>
+					</div>
+					<span class="shop_top_sp3"></span>
+				</div>
+				<div class="shop_content">
+					<div class="shop_content1">
+						<input type="checkbox" class="option">
+					</div>
+					<div class="shop_content2">
+						<img src="https://img10.360buyimg.com/cms/s80x80_jfs/t5896/21/928119113/161402/4b3c128d/5922ac4aN758ad067.jpg" alt="">
+					</div>
+					<div class="shop_content3">
+						<p>2016新款外星人</p>
+						<p>Alienware ALW17R R4-17.3英寸i7游戏本</p>
+					</div>
+					<div class="shop_content4">
+						<p>颜色：7820HK16G内存107...</p>
+						<p>尺码：1T+(256SSD)</p>
+					</div>
+					<div class="shop_content5">
+						<span>￥</span><span class="danjia">17499</span><span>.00</span>
+					</div>
+					<div class="shop_content6">
+						<span class="del">-</span><span class="num">1</span><span class="add">+</span>
+					</div>
+					<div class="shop_content7">
+						<span>￥</span><span class="money_this">17499</span><span>.00</span>
+					</div>
+					<div class="shop_content8">
+						<p>删除</p>
+						<p>移到我的关心</p>
+						<p>加到我的关注</p>
+					</div>
+				</div>
+			</div>
+			<!-- 第二件 -->
+			<div class="shop2">
+				<div class="shop_top">
+					<div class="shop_top_div">
+						<input type="checkbox" class="op">
+						<span class="shop_top_div_sp1">京东自营</span>
+					</div>
+				</div>
+				<div class="shop_content">
+					<div class="shop_content1">
+						<input type="checkbox" class="option">
+					</div>
+					<div class="shop_content2">
+						<img src="https://img10.360buyimg.com/cms/s80x80_jfs/t6025/131/6171672010/195329/180670b5/5970707eNd583a4df.jpg" alt="">
+					</div>
+					<div class="shop_content3">
+						<p>宏碁(acer)暗影骑士3 VX5 15.6英寸游 戏笔记本(i5-7300HQ 8G 1T+128G)</p>
+					</div>
+					<div class="shop_content4">
+						<p>颜色：【i5-7300HQ GTX1...</p>
+					</div>
+					<div class="shop_content5">
+						<span>￥</span><span class="danjia">5499</span><span>.00</span>
+					</div>
+					<div class="shop_content6">
+						<span class="del">-</span><span class="num">1</span><span class="add">+</span>
+					</div>
+					<div class="shop_content7">
+						<span>￥</span><span class="money_this">5499</span><span>.00</span>
+					</div>
+					<div class="shop_content8">
+						<p>删除</p>
+						<p>移到我的关心</p>
+						<p>加到我的关注</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 结算 -->
+		<div class="tfoot">
+			<div class="tfoot_left">
+				<input type="checkbox" id="sel">
+				<span>
+					全选
+				</span>
+				<span>
+					删除选中的商品
+				</span>
+				<span>
+					移到我的关注
+				</span>
+				<span>
+					清除下柜商品
+				</span>
+			</div>
+			<div class="tfoot_right">
+				<div class="tfoot_right3">
+					去结算
+				</div>
+				<div class="tfoot_right2">
+					<p>
+					<span class="tfoot_right2_sp1">总价:</span>
+					<span class="tfoot_right2_sp2">￥</span>
+					<span class="tfoot_right2_sp2" id="money_all">0</span>
+					<span class="tfoot_right2_sp2">.00</span>
+					<span class="icon" style="background: url(imgs/price-tips.png) no-repeat;"></span>
+					</p>
+					<p style="padding-left: 10px;">已节省：-￥0.00</p>
+				</div>
+				<div class="tfoot_right1">
+					<span>已选择</span>
+					<span id="num_all">0</span>
+					<span>件商品</span>
+					<span class="icon"></span>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</body>
+</html>
